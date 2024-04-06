@@ -6,21 +6,11 @@ namespace LegacyApp
     {
         public bool AddUser(string firstName, string lastName, string email, DateTime dateOfBirth, int clientId)
         {
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName))
+            if (!ValidateInputs(firstName, lastName, email))
             {
                 return false;
             }
-
-            if (!email.Contains("@") && !email.Contains("."))
-            {
-                return false;
-            }
-
-            var now = DateTime.Now;
-            int age = now.Year - dateOfBirth.Year;
-            if (now.Month < dateOfBirth.Month || (now.Month == dateOfBirth.Month && now.Day < dateOfBirth.Day)) age--;
-
-            if (age < 21)
+            if (ValidateAge(dateOfBirth) < 21)
             {
                 return false;
             }
@@ -28,14 +18,7 @@ namespace LegacyApp
             var clientRepository = new ClientRepository();
             var client = clientRepository.GetById(clientId);
 
-            var user = new User
-            {
-                Client = client,
-                DateOfBirth = dateOfBirth,
-                EmailAddress = email,
-                FirstName = firstName,
-                LastName = lastName
-            };
+            var user = StworzUser(firstName, lastName, email, dateOfBirth, client);
             
             if (client.Type == "VeryImportantClient")
             {
@@ -67,6 +50,31 @@ namespace LegacyApp
 
             UserDataAccess.AddUser(user);
             return true;
+        }
+
+        public User StworzUser(string firstName, string lastName, string email, DateTime dateOfBirth, Client client)
+        {
+            return new User
+            {
+                Client = client,
+                DateOfBirth = dateOfBirth,
+                EmailAddress = email,
+                FirstName = firstName,
+                LastName = lastName
+            };
+        }
+
+        public bool ValidateInputs(string firstName, string lastName, string email)
+        {
+            return !string.IsNullOrEmpty(firstName) && !string.IsNullOrEmpty(lastName) && email.Contains("@") && email.Contains(".");
+        }
+
+        public int ValidateAge(DateTime dateOfBirth)
+        {
+            var now = DateTime.Now;
+            int age = now.Year - dateOfBirth.Year;
+            if (now.Month < dateOfBirth.Month || (now.Month == dateOfBirth.Month && now.Day < dateOfBirth.Day)) age--;
+            return age;
         }
     }
 }

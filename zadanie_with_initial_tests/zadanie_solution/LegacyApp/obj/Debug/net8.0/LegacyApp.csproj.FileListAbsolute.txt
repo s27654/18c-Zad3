@@ -20,3 +20,15 @@ C:\Users\s27654\Desktop\zadanie_with_initial_tests\zadanie_with_initial_tests\za
 C:\Users\s27654\Desktop\zadanie_with_initial_tests\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\refint\LegacyApp.dll
 C:\Users\s27654\Desktop\zadanie_with_initial_tests\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\LegacyApp.pdb
 C:\Users\s27654\Desktop\zadanie_with_initial_tests\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\ref\LegacyApp.dll
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\bin\Debug\net8.0\LegacyApp.deps.json
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\bin\Debug\net8.0\LegacyApp.dll
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\bin\Debug\net8.0\LegacyApp.pdb
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\LegacyApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\LegacyApp.AssemblyInfoInputs.cache
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\LegacyApp.AssemblyInfo.cs
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\LegacyApp.csproj.CoreCompileInputs.cache
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\LegacyApp.sourcelink.json
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\LegacyApp.dll
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\refint\LegacyApp.dll
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\LegacyApp.pdb
+C:\Users\herbi\Desktop\18c-Zad3\zadanie_with_initial_tests\zadanie_solution\LegacyApp\obj\Debug\net8.0\ref\LegacyApp.dll
